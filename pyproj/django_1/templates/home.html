@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h1> Welcome !! , Below are the spaces which can add 2 numbers</h1>
+<form action="add" method="POST">
+{% csrf_token %}
+    Enter first number : <input type="text" name="num1"><br>
+    Enter Second number : <input type="text" name="num2"><br>
+    <input type="submit">
+</form>
+{% endblock %}
